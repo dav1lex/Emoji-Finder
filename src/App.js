@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from "react";
+import {Inputbar} from "./Inputbar";
+import {EmojiFilter} from "./EmojiFilter";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [searchtext, setSearchtext] = useState('')
+
+    const filterlistener = (event) => {
+        setSearchtext(event.target.value)
+    }
+
+    return (
+        <div className="w-full h-screen flex flex-col">
+
+            <Inputbar filterer={filterlistener}/>
+            <div id='emojilist' className=' h-4/5'>
+
+                <EmojiFilter searchtext={searchtext}/>
+
+            </div>
+
+        </div>
+    );
 }
 
 export default App;
