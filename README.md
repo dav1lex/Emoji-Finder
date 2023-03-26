@@ -1,11 +1,5 @@
-# Getting Started
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Find your favourite emoji
+![Animation](https://user-images.githubusercontent.com/79334944/227750427-cc481526-84db-4796-bfc4-de71cff65d71.gif)
+### Simple emoji finder
+### `clone ==> install ==> run`
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
